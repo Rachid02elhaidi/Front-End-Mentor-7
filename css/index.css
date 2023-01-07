@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+@media (min-width: 576px) {
+  .container {
+    margin: auto;
+    max-width: 560px;
+  }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    margin: auto;
+    max-width: 750px;
+  }
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    margin: auto;
+    max-width: 980px;
+  }
+}
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    margin: auto;
+    max-width: 1180px;
+  }
+}
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    margin: auto;
+    max-width: 1380px;
+  }
+}
+/* header{
+  
+} */
+body {
+  background-color: hsl(0, 0%, 100%);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1000px;
+}
+header .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+header .top .writing{
+  width: 370px;
+
+}
+header .top h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+header .top p {
+  color: hsl(303, 10%, 53%);
+  font-size: 15px;
+}
+header .top .rate> div{
+  background-color: #f7f2f8;
+  padding: 15px 30px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  max-width: 390px;
+}
+header .top .rate> div:nth-child(1) {
+  transform: translateX(-80px);
+}
+header .top .rate> div:nth-child(2) {
+  transform: translateX(-40px);
+}
+header .top .rate .text{
+  display: inline;
+  color: #3c163b;
+  font-weight: 700;
+  margin-left: 20px;
+}
+header .boxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+header .boxes .box {
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+header .boxes .box:nth-child(2) {
+  margin-top: 30px;
+}
+header .boxes .box:nth-child(3) {
+  margin-top: 60px;
+}
+header .boxes .box .profile{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-bottom: 30px;
+}
+header .boxes .box img{
+  border-radius: 50%;
+  width: 40px;
+  margin-right: 20px;
+}
+header .boxes .box h3{
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+header .boxes .box .text{
+  color: hsl(333, 80%, 67%);
+}
+header .boxes .box p {
+  line-height: 1.5;
+  font-size: 15px;
+}
+@media (max-width:375px) {
+  header {
+    padding: 0 20px;
+    max-width: 100%;
+    margin: 40px 0;
+  }
+  header .top {
+    margin-bottom: 30px;
+  }
+  header .boxes {
+    flex-direction: column;
+  }
+  header .boxes .box:nth-child(2) {
+    margin: 0;
+  }
+  header .boxes .box:nth-child(3) {
+    margin: 0;
+  }
+  header .top .rate> div:nth-child(1) {
+    transform: translateX(0);
+  }
+  header .top .rate> div:nth-child(2) {
+    transform: translateX(0);
+  }
+  header .top .writing {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
